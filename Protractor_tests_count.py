@@ -45,12 +45,12 @@ class SearchPattern(ReadLogFile):
         tests = self.search_total_tests()
         failed = self.search_failed_tests()
         passed = tests - failed
-        if failed > 0:
-            print(f"Tests:{tests} Passed:{passed} Failed:{failed}")
-            sys.exit(1)
-        else:
+        if failed == 0:
             print(f"Tests:{tests} Passed:{passed} Failed:{failed}")
             sys.exit(0)
+        else:
+            print(f"Tests:{tests} Passed:{passed} Failed:{failed}")
+            sys.exit(1)
 
 
 FH = SearchPattern("protractor_pass_out.log")
