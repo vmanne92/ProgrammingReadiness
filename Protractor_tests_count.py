@@ -53,7 +53,7 @@ class SearchPattern(ReadLogFile):
             sys.exit(1)
 
 
-FH = SearchPattern("protractor_pass_out.log")
+FH = SearchPattern("filename.log")
 
 FH.print_format()
 
