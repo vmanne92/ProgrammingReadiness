@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestNG Practice">
+  <test thread-count="1" name="TestNG Session1 practice">
+    <classes>
+      <class name="testngExecutionOrder.skiptests"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
